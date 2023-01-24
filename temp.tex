@@ -1,0 +1,442 @@
+\begin{figure}[ht]
+\centering
+\caption{Shared Title for all the graph}
+\begin{subfigure}{0.45\textwidth}
+\includegraphics[width=\textwidth]{graph1.eps}
+\caption{Graph 1 caption}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.45\textwidth}
+\includegraphics[width=\textwidth]{graph2.eps}
+\caption{Graph 2 caption}
+\end{subfigure}
+
+\begin{subfigure}{0.45\textwidth}
+\includegraphics[width=\textwidth]{graph3.eps}
+\caption{Graph 3 caption}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.45\textwidth}
+\includegraphics[width=\textwidth]{graph4.eps}
+\caption{Graph 4 caption}
+\end{subfigure}
+\end{figure}
+\documentclass[xcolor=dvipsnames]{beamer}
+
+\usepackage{graphicx,subfigure,url}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+% example themes
+\usetheme{default}
+\usecolortheme{rose}
+
+
+
+
+% put page numbers
+\setbeamertemplate{footline}[frame number]{}
+% remove navigation symbols
+\setbeamertemplate{navigation symbols}{}
+% set/adapt color scheme
+%\setbeamercolor{palette primary}{bg=ltgray,fg=dkblue}
+
+\newcommand{\HOME}{\string~}
+\input{\HOME/include.tex}
+
+\title{Nobelists}
+\author{DDL Internal}
+\date{January 2023}
+
+\begin{document}
+
+\frame[plain]{\titlepage}
+
+\begin{frame}[plain]{Roadmap}
+	\tableofcontents
+\end{frame}
+
+\section{Motivation}
+\label{"waiting for reftex-label call..."}
+
+\begin{frame}{Research Question}
+\begin{itemize}
+\item Where do brilliant scientists come from?
+\item What are the conditions in which individuals can become highly successful researchers?
+\item What do Nobeli prize winners have in common?
+  \item How much research potential is "left on the table" simply because would-be scientists are not given access to resources?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Theory}
+\begin{itemize}
+\item No reason why talent shouldn't be evenly distributed in the global population
+  \item 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Limitations and Empirical Challenges}
+\begin{itemize}
+\item Selection (remember where you wanted to go with this)
+\item Competence is positively correlated with SES
+  \item Data limitations (elaborate on 1) time dimention (good quality data back in early 20th century; 2) difficult to conduct a global analysis given that only 50 countries have Nobel-prize winners )
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Related Literature}
+\begin{enumerate}
+\item Innovation as a driver of economic growth
+  \item Mobility/Equality of Opportunity
+
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Jaravel et al. (2019)}
+  
+  \begin{itemize}
+  \item Study factors that determine propensity to become an inventor in the US, trying to parse out "nature" vs "nurture" determinants.
+\item Consider whether math test scores (proxy for inventive ability) can account for the gap in innovation by income, race, and/or gender.    
+
+\end{itemize}
+
+\hyperlink{supplem2}{\beamerbutton{Data}}
+
+\end{frame}
+
+\begin{frame}{Jaravel et al. Cont'd}
+  \begin{block}{Findings}
+    \end{block}
+
+  \begin{itemize}
+ \item  Find that children’s chances of becoming inventors vary sharply with characteristics at birth, such as their race, gender, and parents’ socioeconomic class. 
+  \item  Children born to parents in the top 1\% of the income distribution are
+10 times as likely to become inventors as those born to families
+with below-median income
+\item Most of the innovation gap is explained by factors that affect children before they enter the labor market.
+\item Exposure to innovation during childhood has significant causal effects on children’s propensities to invent.
+
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Javarel et al. Cont'd}
+\begin{block}{Gender}
+  \begin{itemize}
+  \item 82\% of 40-yearold inventors today are men. This gender gap in innovation is
+shrinking gradually, but at the current rate of convergence, it will
+take another 118 years to reach gender parity.
+
+  \end{itemize}
+
+\begin{figure}[H]
+  \caption{ } 
+  \label{fig:f1}
+  \begin{center}
+    \includegraphics[scale=0.5]{\tmppath/jaravel1.png}  
+\end{center}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Aghion et al. (2018)}
+
+Study social origins and IQ of inventors (in Finnish context) \\
+
+  What's cool is that they manage to parse out effect of:
+\begin{enumerate}
+\item parental income vs. education
+  \item father's vs. mother's income/education
+  \item own ability\footnote{as (imperfectly) measured by IQ tests} - compare inventors to MDs/lawyers
+\item family structure (biological vs adoptive parents, divorced parents, etc.)
+   
+\end{enumerate}
+
+\hyperlink{supplem1}{\beamerbutton{Data}}
+
+\end{frame}
+
+\begin{frame}{Aghion et al.}
+
+  \begin{block}{Findings}
+    \end{block}
+
+  \begin{itemize}
+
+  \item Parental income,socioeconomic status, education and own IQ all are strongly positively associated with the probability to invent. (The probability is highly convex at the right end of the distribution for all those characteristics.)
+\end{itemize}
+\end{frame}
+
+    \begin{frame}{Parental Income}
+      \begin{enumerate}
+      \item The probability of innovating for an individual whose father is at the very top of the income distribution is about 10X larger than that of an individual with a father at the bottom end of the income distribution. 
+\item Fixing the income percentile, the effect of mother’s income is larger than that of father’s.
+\item Starting from roughly the 60th percentile, the effect of mother’s income starts to increase faster than that of father’s income.
+      \end{enumerate}
+\end{frame}
+
+    \begin{frame}{Parental Education}
+
+      \begin{itemize}
+\item Those with a father or mother with a STEM PhD are more than six times as likely to invent as those whose father or mother has only a base education.
+\item Having a father or a mother with a STEM instead of a non-STEM PhD increases the probability to invent by more than 50 percent.
+
+      \end{itemize}
+    \end{frame}
+    
+\begin{frame}{Ability (as measured by IQ)}
+
+  \begin{itemize}
+
+\item The estimated impact of parental income is greatly diminished once we control for i) parental socioeconomic status, ii) parental education, iii) the individual’s IQ.
+\item The estimated impact of having a father in the top 5\% of the income distribution drops by 2/3 when including 1) parental socioeconomic status, 2) parental education, and 3) own IQ. 
+
+  \end{itemize}
+\end{frame}
+
+
+\section{This paper}
+
+\begin{frame}{Who are Nobel-prize winners?}
+\begin{itemize}
+    \item How has the pool of Nobel prize winners changed over the entire history of the 
+\end{itemize}
+\end{frame}
+
+\section{Data}
+\label{"waiting for reftex-label call..."}
+
+\begin{frame}{Winners}
+\begin{itemize}
+    \item Name, date of birth, country of birth, age at award, gender, institution, alma mater, father occupation, Nobel prize winning parent, prize categories (excluding peace and literature), number of winners sharing award
+\end{itemize}
+\end{frame}
+
+\begin{frame}{IPUMS}
+
+  \begin{itemize}
+  \item Occupational Code/Categories
+    \begin{enumerate}
+    \item coarse measure microocc - 70 categories
+      \item more granular measure occ1950 - N categories
+    \end{enumerate}
+  \item Occupational score
+  \item Educational Attainment (literacy pre-1940)
+  \item Population share of each occupational category
+  \end{itemize}
+\end{frame}
+
+
+\section{Results}
+\label{"waiting for reftex-label call..."}
+
+\begin{frame}{Summary Statistics}
+\item here
+\end{frame}
+
+\begin{frame}{Break-down by prize category and gender}
+    \includegraphics[scale=0.5]{\prizepath/nr_cat_gen.pdf}  
+\end{frame}
+
+\begin{frame}{Income Rankings}
+%  \includegraphics[width=0.5]{file}
+\end{frame}
+
+
+\begin{frame}{Education Rankings}
+
+%\includegraphics[width=0.5]{file}
+ text 
+\end{frame}
+
+\begin{frame}{Income and Education Rankings - Full Sample}
+
+
+\begin{table}[hp]
+\begin{center}
+ \caption{Rankings over time}
+\scalebox{0.9}{\input{\prizepath/table1_reg_jc.tex}}
+\end{center}
+\begin{tablenotes}\footnotesize
+\item[*] Notes: The dependent variable has been rescaled in order to easily and meaningfully interpret the constant in the regression above as the fitted value for the first year of our sample.
+\end{tablenotes}
+\end{table}
+
+\end{frame}
+
+
+\begin{frame}{Gender}
+
+  \includegraphics[width=0.5]{\prizepath/inc_rank_sm_gender.pdf}
+
+\end{frame}
+
+\begin{frame}{work}
+
+  \includegraphics[width=0.5]{\prizepath/yr_educ_rank_sm_gender.pdf}
+
+\end{frame}
+
+\begin{frame}{Income and Education Rankings - Split by Gender}
+
+\begin{table}[hp]
+\begin{center}
+  \caption{Rankings over time}
+\scalebox{0.9}{\input{\prizepath/table2_reg_jc.tex}}
+\end{center}
+\begin{tablenotes}\footnotesize
+\item[*] Notes: The dependent variable has been rescaled in order to easily and meaningfully interpret the constant in the regression above as the fitted value for the first year of our sample.
+\end{tablenotes}
+\end{table}
+
+\end{frame}
+
+
+\begin{frame}{Country Blocs}
+
+  \includegraphics[width=0.5]{\prizepath/inc_rank_sm_bloc.pdf}
+
+\end{frame}
+
+\begin{frame}{ }
+
+  \includegraphics[width=0.5]{\prizepath/yr_educ_rank_sm_bloc.pdf}
+
+\end{frame}
+
+\begin{frame}{Income and Education Rankings - Split by Region}
+
+\begin{table}[hp]
+\begin{center}
+  \caption{Rankings over time}
+\scalebox{0.9}{\input{\prizepath/table2_reg_jc.tex}}
+\end{center}
+\begin{tablenotes}\footnotesize
+\item[*] Notes: The dependent variable has been rescaled in order to easily and meaningfully interpret the constant in the regression above as the fitted value for the first year of our sample.
+\end{tablenotes}
+\end{table}
+
+\end{frame}
+
+
+\begin{frame}{Scandinavian Subsample}
+
+%\includegraphics[width=0.5]{file}
+  text
+  
+\end{frame}
+
+
+\begin{frame}{Prize Categories}
+
+\begin{figure}[ht]
+\centering
+\caption{Income Rankings}
+\begin{subfigure}{0.45\textwidth}
+\includegraphics[width=\textwidth]{\prizepath/Chemistry_inc_rank_sm.pdf}
+\caption{Graph 1 caption}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.45\textwidth}
+\includegraphics[width=\textwidth]{\prizepath/Economics_inc_rank_sm.pdf}
+\caption{Graph 2 caption}
+\end{subfigure}
+
+\begin{subfigure}{0.45\textwidth}
+\includegraphics[width=\textwidth]{\prizepath/Medicine_inc_rank_sm.pdf}
+\caption{Graph 3 caption}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.45\textwidth}
+\includegraphics[width=\textwidth]{\prizepath/Physics_inc_rank_sm.pdf}
+\caption{Graph 4 caption}
+\end{subfigure}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Prize Categories}
+
+\begin{figure}[ht]
+\centering
+\caption{Education Rankings}
+\begin{subfigure}{0.45\textwidth}
+\includegraphics[width=\textwidth]{\prizepath/Chemistry_yr_educ_rank_sm.pdf}
+\caption{Graph 1 caption}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.45\textwidth}
+\includegraphics[width=\textwidth]{\prizepath/Economics_yr_educ_rank_sm.pdf}
+\caption{Graph 2 caption}
+\end{subfigure}
+
+\begin{subfigure}{0.45\textwidth}
+\includegraphics[width=\textwidth]{\prizepath/Medicine_yr_educ_rank_sm.pdf}
+\caption{Graph 3 caption}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.45\textwidth}
+\includegraphics[width=\textwidth]{\prizepath/Physics_yr_educ_rank_sm.pdf}
+\caption{Graph 4 caption}
+\end{subfigure}
+\end{figure}
+\end{frame}
+
+
+\section{Next steps}
+\label{"waiting for reftex-label call..."}
+
+\begin{frame}{Finalizing data collection}
+\begin{itemize}
+\item Add 2022 cohort of winners to our data
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Link global wage-occupation data to our sample}
+  \begin{itemize}
+  \item Map occupational categories in IPUMS to International Standard Classification of Occupations (ISCO) 
+\item 
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Expand scope}
+
+  \begin{itemize}
+  \item Fields Medalists
+    \item Look up other prizes 
+  \end{itemize}
+\end{frame}
+
+
+
+\appendix
+
+\begin{frame}{Data}[label=supplem1]
+  Three linked Finnish data sets: \\
+\begin{enumerate}
+\item Individual data on income, education (degree and field), residence, age, etc. for individuals born between 1961 and 1984, and their parents
+\item Individual patenting data from the European Patent Office - all patent applications with at least one inventor who registers Finland as their place of residence
+\item  For each patent, observe all the inventors, their name and address, the patentee and its address, the number of citations in the first 5 years, and the size of the patent family (i.e., the number of countries in which the patent exists).
+\item IQ data from the Finnish Defense Forces. (conscription only affects males in Finland, concentrate on the male workforce)
+\item The resulting cross-sectional sample comprises of around 350,000 individuals and contains 4,754 inventors.
+\end{enumerate}
+
+Back to \hyperlink{main}{\beamerbutton{main}}
+\end{frame}
+
+\begin{frame}{Data}[label=supplem2]
+  Three linked Finnish data sets: \\
+\begin{enumerate}
+\item Individual data on 1/2 million inventors from patent records linked to tax records
+  \item  Information on inventors’ geographic location (city and state) when they
+filed the patent and the three-digit technology class to which the
+patent belongs
+\item Individual’s gender and age, geographic location, and own and parental income from federal income tax records spanning 1996–2012
+  \item Data on childhood test scores (English \& Math) for the subset of individuals who attended
+NYC public schools. These data span the school years 1988–1989 through 2008–2009 and cover roughly 2.5 million children in grades 3–8.
+\end{enumerate}
+
+Back to \hyperlink{main}{\beamerbutton{main}}
+\end{frame}
+
+\end{document}
